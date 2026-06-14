@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Yosuke Nambu — 美容室・温泉・カフェなど店舗向けの上質なWebサイトを制作します。">
+  <title>Yosuke Nambu | Web Designer</title>
+
+  <!-- Google Fonts：明朝体・セリフ体 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Serif+JP:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==============================
+       ヘッダー
+       ============================== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#hero" class="header__logo">Yosuke Nambu</a>
+
+      <button class="header__menu-btn" id="menuBtn" aria-label="メニューを開く" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="header__nav" id="nav">
+        <ul class="header__nav-list">
+          <li><a href="#about" class="header__nav-link">About</a></li>
+          <li><a href="#works" class="header__nav-link">Works</a></li>
+          <li><a href="#services" class="header__nav-link">Services</a></li>
+          <li><a href="#contact" class="header__nav-link header__nav-link--cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ==============================
+         1. Hero（TOP）
+         ============================== -->
+    <section class="hero" id="hero">
+      <div class="hero__inner">
+        <p class="hero__label">Web Designer / Vibe Coding Creator</p>
+
+        <h1 class="hero__title">
+          Beautiful websites<br>
+          <em>for local businesses.</em>
+        </h1>
+
+        <p class="hero__lead">
+          美容室・温泉施設・カフェなど<br>
+          店舗向けの上質なWebサイトを制作。
+        </p>
+
+        <!-- 強み3点 -->
+        <ul class="hero__features">
+          <li>スマホ対応</li>
+          <li>高級感デザイン</li>
+          <li>AI活用による短納期制作</li>
+        </ul>
+
+        <!-- CTAボタン2つ -->
+        <div class="hero__actions">
+          <a href="#works" class="btn btn--primary">WORKSを見る</a>
+          <a href="#contact" class="btn btn--outline">無料相談はこちら</a>
+        </div>
+      </div>
+      <div class="hero__line" aria-hidden="true"></div>
+    </section>
+
+    <!-- ==============================
+         2. About
+         ※ プロフィール画像：profile-image の src を差し替え
+         ============================== -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">About</span>
+        </div>
+
+        <div class="about__content">
+          <!-- 左：テキスト（スマホでは上） -->
+          <div class="about__text">
+            <h2 class="about__name">Yosuke Nambu</h2>
+            <p class="about__role">
+              Web Designer<br>
+              Vibe Coding Creator
+            </p>
+            <div class="about__body">
+              <p>店舗の魅力を最大限に引き出す<br>Webサイトを制作しています。</p>
+              <p>
+                美容室・温泉施設・カフェなど、<br>
+                地域に根ざしたビジネス向けに<br>
+                高級感と使いやすさを両立した<br>
+                レスポンシブサイトを提供。
+              </p>
+              <p>
+                AIを活用した効率的な制作で、<br>
+                短納期・高品質を実現します。
+              </p>
+            </div>
+          </div>
+
+          <!-- 右：顔写真（スマホでは下・中央） -->
+          <div class="about__visual">
+            <img src="images/nambu.png" alt="Yosuke Nambu" class="profile-image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         3. Works（制作実績）
+         ============================== -->
+    <section class="section works" id="works">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">Works</span>
+          <h2 class="section__title">Selected Projects</h2>
+        </div>
+
+        <div class="works__grid">
+
+          <!-- ① 美容室 -->
+          <article class="work-card">
+            <span class="work-card__category">美容室</span>
+            <img src="images/salon.png" alt="SALON TEMPLATE" class="work-image">
+            <div class="work-card__body">
+              <h3 class="work-card__title">SALON TEMPLATE</h3>
+              <div class="work-card__desc">
+                <p>美容室向け</p>
+                <p>高級感のあるデザイン<br>スマホ完全対応</p>
+              </div>
+              <p class="work-card__period">制作期間：3日</p>
+              <a href="https://salon-template-ebon.vercel.app/" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">VIEW SITE</a>
+            </div>
+          </article>
+
+          <!-- ② 温泉 -->
+          <article class="work-card">
+            <span class="work-card__category">温泉</span>
+            <img src="images/onsen.png" alt="温泉サイト" class="work-image">
+            <div class="work-card__body">
+              <h3 class="work-card__title">温泉サイト</h3>
+              <div class="work-card__desc">
+                <p>温泉施設向け</p>
+                <p>和モダンデザイン</p>
+              </div>
+              <p class="work-card__period">制作期間：4日</p>
+              <a href="https://manainoyu-design.vercel.app/" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">VIEW SITE</a>
+            </div>
+          </article>
+
+          <!-- ③ AIランキング -->
+          <article class="work-card">
+            <span class="work-card__category">AI</span>
+            <img src="images/aitool.png" alt="AIランキングサイト" class="work-image">
+            <div class="work-card__body">
+              <h3 class="work-card__title">AIランキングサイト</h3>
+              <div class="work-card__desc">
+                <p>AIツール比較サイト</p>
+                <p>ランキング表示<br>レスポンシブ対応</p>
+              </div>
+              <p class="work-card__period">制作期間：2日</p>
+              <a href="https://ai-ranking-site.vercel.app/" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">VIEW SITE</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         4. Services
+         ============================== -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">Services</span>
+          <h2 class="section__title">What I Offer</h2>
+        </div>
+
+        <div class="services__grid">
+
+          <article class="service-card">
+            <h3 class="service-card__title">Website Design</h3>
+            <p class="service-card__desc">
+              店舗の魅力を伝える<br>
+              高級感あるWebサイト制作
+            </p>
+          </article>
+
+          <article class="service-card">
+            <h3 class="service-card__title">Responsive Design</h3>
+            <p class="service-card__desc">
+              スマホ・PC対応<br>
+              どの端末でも<br>
+              美しく表示
+            </p>
+          </article>
+
+          <article class="service-card">
+            <h3 class="service-card__title">AI Support</h3>
+            <p class="service-card__desc">
+              AIを活用した<br>
+              ・予約補助<br>
+              ・チャットボット<br>
+              ・業務効率化
+            </p>
+          </article>
+
+          <article class="service-card">
+            <h3 class="service-card__title">Fast Delivery</h3>
+            <p class="service-card__desc">
+              AI活用により<br>
+              短納期・高品質を実現
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         5. Contact
+         ※ Instagram・Email の href を変更してください
+         ============================== -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section__header section__header--center">
+          <span class="section__label">Contact</span>
+          <h2 class="section__title">Get in Touch</h2>
+        </div>
+
+        <div class="contact__content">
+          <p class="contact__lead">
+            店舗向けWebサイト制作の<br class="sp-only">ご相談を受け付けています。
+          </p>
+          <ul class="contact__types">
+            <li>美容室</li>
+            <li>温泉施設</li>
+            <li>カフェ</li>
+            <li>エステ</li>
+          </ul>
+          <p class="contact__note">お気軽にご連絡ください。</p>
+
+          <div class="contact__actions">
+            <!-- SNS・Email：URLやメールアドレスを変更する場合は href を編集 -->
+            <a href="https://instagram.com/" class="btn btn--primary" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.facebook.com/nambu.yosuke" class="btn btn--outline" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="mailto:yoh1888.nambu@gmail.com" class="btn btn--outline">Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__copy">&copy; 2026 Yosuke Nambu. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
